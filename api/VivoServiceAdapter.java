@@ -12,7 +12,6 @@ public class VivoServiceAdapter implements SMSService {
 
     @Override
     public boolean sendSMS(SMS sms) {
-        // Adaptando o método enviarSMS da classe VivoService para a interface comum
         try {
             vivoService.enviarSMS(sms.getOrigem(), sms.getDestino(), sms.getTimestamp(), new String[]{sms.getTexto()});
             return true;

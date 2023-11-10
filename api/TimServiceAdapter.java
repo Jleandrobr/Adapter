@@ -12,7 +12,6 @@ public class TimServiceAdapter implements SMSService {
 
     @Override
     public boolean sendSMS(SMS sms) {
-        // Adaptando o método sendSMS da classe TimService para a interface comum
         return timService.sendSMS(sms);
     }
 }
